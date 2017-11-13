@@ -4,10 +4,12 @@ $bc-dropdown-border: $input-border;
   position: absolute;
   z-index: 4;
   background: #fff;
-  width: 100%;
+  width: 340px;
+  top:100%;
+  right:0;
   border: 1px solid $bc-dropdown-border;
   border-top: none;
-  padding: 10px;
+  padding: 20px 20px 0;
 
   dl {
     margin-bottom: 10px;
@@ -76,7 +78,6 @@ $bc-dropdown-border: $input-border;
 }
 
 .cart-prices-line {
-  border-top: 1px solid #333;
   padding: 5px 0;
   &:last-of-type {
     padding-bottom: 0;

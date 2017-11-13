@@ -82,6 +82,8 @@
 }
 
 #homeslider-pager .bx-pager-item .bx-pager-link.active {
-  background: black;
+  background: #0088cc;
   color: #fff;
 }
+
+/*# sourceMappingURL=homeslider.css.map */

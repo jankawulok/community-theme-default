@@ -1,24 +1,5 @@
 #blockcart {
   position: relative;
-  margin-top: 30px;
-}
-
-@media (max-width: 767px) {
-  #blockcart {
-    margin-top: 15px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #blockcart {
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #blockcart {
-    margin-top: 20px;
-  }
 }
 
 .ajax_cart_total {
@@ -29,8 +10,6 @@
   height: 46px;
   padding: 0 16px;
   line-height: 46px;
-  background: black;
-  color: #fad629;
   display: block;
   overflow: hidden;
   font-weight: bold;
@@ -50,10 +29,12 @@
   position: absolute;
   z-index: 4;
   background: #fff;
-  width: 100%;
+  width: 340px;
+  top: 100%;
+  right: 0;
   border: 1px solid #ccc;
   border-top: none;
-  padding: 10px;
+  padding: 20px 20px 0;
 }
 
 #blockcart-dropdown dl {
@@ -123,7 +104,6 @@
 }
 
 .cart-prices-line {
-  border-top: 1px solid #333;
   padding: 5px 0;
 }
 
@@ -251,3 +231,5 @@
 .crossseling-content h3 {
   margin: 0 0 0.75em;
 }
+
+/*# sourceMappingURL=blockcart.css.map */

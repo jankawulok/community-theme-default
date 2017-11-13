@@ -139,32 +139,6 @@
     {/if}
   </div>
 
-  {if $nb_products > $products_per_page && $start!=$stop}
-    <div class="form-group showall">
-      <form action="{if !is_array($requestNb)}{$requestNb}{else}{$requestNb.requestUrl}{/if}" method="get">
-
-        {if !empty($search_query)}
-          <input type="hidden" name="search_query" value="{$search_query|escape:'html':'UTF-8'}" />
-        {/if}
-        {if !empty($tag) && !is_array($tag)}
-          <input type="hidden" name="tag" value="{$tag|escape:'html':'UTF-8'}" />
-        {/if}
-
-        {if is_array($requestNb)}
-          {foreach from=$requestNb item=requestValue key=requestKey}
-            {if $requestKey != 'requestUrl' && $requestKey != 'p'}
-              <input type="hidden" name="{$requestKey|escape:'html':'UTF-8'}" value="{$requestValue|escape:'html':'UTF-8'}" />
-            {/if}
-          {/foreach}
-        {/if}
-
-        <button type="submit" class="btn btn-default">{l s='Show all'}</button>
-        <input name="n" id="nb_item" type="hidden" value="{$nb_products}" />
-
-      </form>
-    </div>
-  {/if}
-
   <div class="form-group product-count">
     {if ($n*$p) < $nb_products }
       {assign var='productShowing' value=$n*$p}

@@ -184,7 +184,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu > li > ul > li > a:hover {
-  color: black;
+  color: #0d0d0d;
 }
 
 .sf-menu > li > ul > li {
@@ -309,3 +309,5 @@ ul.sf-menu li li li.sfHover ul {
 #block_top_menu li.category-thumbnail {
   padding-right: 0;
 }
+
+/*# sourceMappingURL=superfish-modified.css.map */

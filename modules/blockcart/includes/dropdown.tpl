@@ -1,6 +1,63 @@
 <div id="blockcart-dropdown" class="cart_block" style="display: none;">
+  {assign var='free_ship' value=count($cart->getDeliveryAddressesWithoutCarriers(true, $errors))}
+
+    <div class="cart-prices">
+
+      <div class="cart-prices-line" {if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!$cart_qties || $cart->isVirtualCart() || !isset($cart->id_address_delivery) || !$cart->id_address_delivery || $free_ship)} style="display: none;"{/if}>
+        <span>{l s='Shipping' mod='blockcart'}</span>
+        <span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
+          {if $shipping_cost_float == 0}
+            {if !($page_name == 'order-opc') && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)}{l s='To be determined' mod='blockcart'}{else}{l s='Free shipping!' mod='blockcart'}{/if}
+          {else}
+            {$shipping_cost}
+          {/if}
+        </span>
+      </div>
+
+      {if $show_wrapping}
+        <div class="cart-prices-line">
+          {assign var='cart_flag' value='Cart::ONLY_WRAPPING'|constant}
+          <span>{l s='Wrapping' mod='blockcart'}</span>
+          <span class="price ajax_block_wrapping_cost cart_block_wrapping_cost">
+            {if $priceDisplay == 1}
+              {convertPrice price=$cart->getOrderTotal(false, $cart_flag)}{else}{convertPrice price=$cart->getOrderTotal(true, $cart_flag)}
+            {/if}
+          </span>
+        </div>
+      {/if}
+
+      {if $show_tax && isset($tax_cost)}
+        <div class="cart-prices-line">
+          <span>{l s='Tax' mod='blockcart'}</span>
+          <span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
+        </div>
+      {/if}
+
+      <div class="cart-prices-line">
+        <span>{l s='Total' mod='blockcart'}</span>
+        <span class="price cart_block_total ajax_block_cart_total">{$total}</span>
+      </div>
+
+      {if $use_taxes && $display_tax_label && $show_tax}
+        <div class="cart-prices-line">
+          {if $priceDisplay == 0}
+            {l s='Prices are tax included' mod='blockcart'}
+          {elseif $priceDisplay == 1}
+            {l s='Prices are tax excluded' mod='blockcart'}
+          {/if}
+        </div>
+      {/if}
+
+    </div>
+
+    <div class="cart-buttons">
+      <a id="button_order_cart" class="btn btn-block btn-success" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
+        {l s='Check out' mod='blockcart'} <i class="icon icon-angle-right"></i>
+      </a>
+    </div>
   <div class="cart_block_list">
     {if $products}
+
       <dl class="products">
         {foreach from=$products item='product'}
 
@@ -109,63 +166,6 @@
         {/foreach}
       </table>
     {/if}
-
-    {assign var='free_ship' value=count($cart->getDeliveryAddressesWithoutCarriers(true, $errors))}
-
-    <div class="cart-prices">
-
-      <div class="cart-prices-line" {if !($page_name == 'order-opc') && $shipping_cost_float == 0 && (!$cart_qties || $cart->isVirtualCart() || !isset($cart->id_address_delivery) || !$cart->id_address_delivery || $free_ship)} style="display: none;"{/if}>
-        <span>{l s='Shipping' mod='blockcart'}</span>
-        <span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
-          {if $shipping_cost_float == 0}
-            {if !($page_name == 'order-opc') && (!isset($cart->id_address_delivery) || !$cart->id_address_delivery)}{l s='To be determined' mod='blockcart'}{else}{l s='Free shipping!' mod='blockcart'}{/if}
-          {else}
-            {$shipping_cost}
-          {/if}
-        </span>
-      </div>
-
-      {if $show_wrapping}
-        <div class="cart-prices-line">
-          {assign var='cart_flag' value='Cart::ONLY_WRAPPING'|constant}
-          <span>{l s='Wrapping' mod='blockcart'}</span>
-          <span class="price ajax_block_wrapping_cost cart_block_wrapping_cost">
-            {if $priceDisplay == 1}
-              {convertPrice price=$cart->getOrderTotal(false, $cart_flag)}{else}{convertPrice price=$cart->getOrderTotal(true, $cart_flag)}
-            {/if}
-          </span>
-        </div>
-      {/if}
-
-      {if $show_tax && isset($tax_cost)}
-        <div class="cart-prices-line">
-          <span>{l s='Tax' mod='blockcart'}</span>
-          <span class="price cart_block_tax_cost ajax_cart_tax_cost">{$tax_cost}</span>
-        </div>
-      {/if}
-
-      <div class="cart-prices-line">
-        <span>{l s='Total' mod='blockcart'}</span>
-        <span class="price cart_block_total ajax_block_cart_total">{$total}</span>
-      </div>
-
-      {if $use_taxes && $display_tax_label && $show_tax}
-        <div class="cart-prices-line">
-          {if $priceDisplay == 0}
-            {l s='Prices are tax included' mod='blockcart'}
-          {elseif $priceDisplay == 1}
-            {l s='Prices are tax excluded' mod='blockcart'}
-          {/if}
-        </div>
-      {/if}
-
-    </div>
-
-    <div class="cart-buttons">
-      <a id="button_order_cart" class="btn btn-block btn-success" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
-        {l s='Check out' mod='blockcart'} <i class="icon icon-angle-right"></i>
-      </a>
-    </div>
 
   </div>
 </div>

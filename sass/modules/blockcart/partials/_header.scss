@@ -3,18 +3,14 @@ $bc-header-color: #fad629;
 
 #blockcart {
   position: relative;
-  margin-top: 30px;
 
   @media (max-width: $screen-xs-max) {
-    margin-top: 15px;
   }
 
   @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-    margin-top: 10px;
   }
 
   @media (min-width: $screen-md) and (max-width: $screen-md-max) {
-    margin-top: 20px;
   }
 }
 
@@ -31,8 +27,8 @@ $bc-header-color: #fad629;
   // font-size: $font-size-large;
   line-height: $input-height-large;
 
-  background: $bc-header-bg;
-  color: $bc-header-color;
+  // background: $bc-header-bg;
+  // color: $bc-header-color;
   display: block;
   overflow: hidden;
   font-weight: bold;

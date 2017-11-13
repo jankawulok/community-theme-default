@@ -71,7 +71,7 @@
 }
 
 .blockcategories .ilvl-1:hover {
-  background-color: black;
+  background-color: #0088cc;
   color: #fff;
   border-color: #ddd;
 }
@@ -79,11 +79,11 @@
 .blockcategories .ilvl-1:hover.active, .blockcategories .ilvl-1:hover:hover, .blockcategories .ilvl-1:hover:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: black;
+  background-color: #007cba;
 }
 
 .blockcategories .ilvl-2 {
-  background-color: #1a1a1a;
+  background-color: #00aaff;
   color: #fff;
   border-color: #ddd;
 }
@@ -91,7 +91,7 @@
 .blockcategories .ilvl-2.active, .blockcategories .ilvl-2:hover, .blockcategories .ilvl-2:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: #111111;
+  background-color: #009eed;
 }
 
 .blockcategories .ilvl-2:hover {
@@ -99,7 +99,7 @@
 }
 
 .blockcategories .ilvl-3 {
-  background-color: #333333;
+  background-color: #33bbff;
   color: #fff;
   border-color: #ddd;
 }
@@ -107,7 +107,7 @@
 .blockcategories .ilvl-3.active, .blockcategories .ilvl-3:hover, .blockcategories .ilvl-3:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: #2a2a2a;
+  background-color: #21b5ff;
 }
 
 .blockcategories .ilvl-3:hover {
@@ -115,7 +115,7 @@
 }
 
 .blockcategories .list-group-item-wrapper.active > .ilvl-1 {
-  background-color: black;
+  background-color: #0088cc;
   color: #fff;
   border-color: #ddd;
 }
@@ -123,11 +123,11 @@
 .blockcategories .list-group-item-wrapper.active > .ilvl-1.active, .blockcategories .list-group-item-wrapper.active > .ilvl-1:hover, .blockcategories .list-group-item-wrapper.active > .ilvl-1:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: black;
+  background-color: #007cba;
 }
 
 .blockcategories .list-group-item-wrapper.active > .ilvl-2 {
-  background-color: #1a1a1a;
+  background-color: #00aaff;
   color: #fff;
   border-color: #ddd;
 }
@@ -135,11 +135,11 @@
 .blockcategories .list-group-item-wrapper.active > .ilvl-2.active, .blockcategories .list-group-item-wrapper.active > .ilvl-2:hover, .blockcategories .list-group-item-wrapper.active > .ilvl-2:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: #111111;
+  background-color: #009eed;
 }
 
 .blockcategories .list-group-item-wrapper.active > .ilvl-3 {
-  background-color: #333333;
+  background-color: #33bbff;
   color: #fff;
   border-color: #ddd;
 }
@@ -147,5 +147,7 @@
 .blockcategories .list-group-item-wrapper.active > .ilvl-3.active, .blockcategories .list-group-item-wrapper.active > .ilvl-3:hover, .blockcategories .list-group-item-wrapper.active > .ilvl-3:focus {
   color: #fff;
   border-color: #ddd;
-  background-color: #2a2a2a;
+  background-color: #21b5ff;
 }
+
+/*# sourceMappingURL=blockcategories.css.map */

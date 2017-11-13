@@ -18,9 +18,9 @@
     "gulp-rename": "^1.2.2"
   },
   "options": {
-    "themeName": "community-theme-default",
+    "themeName": "theme",
     "themeModulePrefix": "ct",
-    "sourcemaps": false
+    "sourcemaps": true
   },
   "scripts": {
     "compile-css": "./node_modules/.bin/gulp compile-css",

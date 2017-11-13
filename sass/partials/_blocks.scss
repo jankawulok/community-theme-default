@@ -1,20 +1,29 @@
-$block-heading-bg: #f5f5f5;
-$block-heading-border: #ccc;
-$block-line-border: #ccc;
+$block-heading-bg: $brand-primary;
+$block-heading-border: $brand-primary;
+$block-line-border: $brand-primary;
 
 .block {
 
   margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right:15px;
+  background: #fff;
+  border: 1px solid $ps-border-color;
 
   .title_block {
-    color: $text-color;
-    font-size: $font-size-h4;
-    line-height: $line-height-base;
+    color: #fff;
+    font-size: $font-size-h6;
+    line-height: 1em;
     font-weight: bold;
+    text-transform: uppercase;
     background: $block-heading-bg;
     border-bottom: 1px solid $block-heading-border;
     padding: 10px 15px;
-    margin: 0 0 15px;
+    margin: 0 -15px 15px;
+    &>a {
+      color: #fff;
+    }
+
   }
   h3 .product-name {
     font-size: 17px;

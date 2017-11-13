@@ -106,7 +106,7 @@
 
     <div id="header-blocks" class="container">
         <div class="row">
-            <div id="shop-logo" class="col-sm-4">
+            <div id="shop-logo" class="col-sm-3 vcenter">
                 <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}"
                    title="{$shop_name|escape:'html':'UTF-8'}">
                     <img class="img-responsive center-block" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"
@@ -116,20 +116,49 @@
             {if !empty($HOOK_TOP)}{$HOOK_TOP}{/if}
         </div>
     </div>
+    <div class="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="header-menu__categories col-xs-12 col-sm-4 col-md-3">
+                    {hook h='displayVerticalMenu'}
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
 
 </header>
 
-<div id="columns" class="container">
-    {if $page_name !='index' && $page_name !='pagenotfound'}
+{if $page_name !='index' && $page_name !='pagenotfound'}
+    <div class="container">
         {include file="$tpl_dir./breadcrumb.tpl"}
+    </div>
+    
+{/if}
+
+<div id="columns" class="container">
+    {if isset($page_name) && $page_name == 'category'}
+        <h1 class="page-heading">
+            <span class="cat-name">
+                {$category->name|escape:'html':'UTF-8'}
+                {if isset($categoryNameComplement)}&nbsp;{$categoryNameComplement|escape:'html':'UTF-8'}{/if}
+            </span>
+        </h1>
     {/if}
+    {hook h='displayTopCategory'}
     {capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
     {if !empty($smarty.capture.displayTopColumn)}
         <div id="top_column" class="row">{$smarty.capture.displayTopColumn}</div>
     {/if}
     <div class="row">
         {if isset($left_column_size) && !empty($left_column_size)}
-            <aside id="left_column" class="col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}</aside>
+            <aside id="left_column" class="col-xs-12 col-sm-{$left_column_size|intval}">{$HOOK_LEFT_COLUMN}
+                {if !empty($category->description)}
+                    <div id="category-description" class="rte">{$category->description}</div>
+                {/if}
+            </aside>
         {/if}
         {if isset($left_column_size) && isset($right_column_size)}{assign var='cols' value=(12 - $left_column_size - $right_column_size)}{else}{assign var='cols' value=12}{/if}
         <main id="center_column" class="col-xs-12 col-sm-{$cols|intval}">

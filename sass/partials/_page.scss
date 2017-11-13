@@ -11,7 +11,7 @@ body {
 
 #header-blocks {
   background-color: $page-content-bg;
-  padding-top: 15px;
+  padding: 15px;
   position: relative;
 }
 
@@ -19,7 +19,15 @@ body {
   position: relative;
   padding-bottom: 50px;
   padding-top: 15px;
+}
+#product #columns {
   background-color: $page-content-bg;
+  border: 1px solid $ps-border-color;
+}
+#index {
+  #columns {
+    padding-top: 0;
+  }
 }
 
 #header-banners {
@@ -27,7 +35,20 @@ body {
 }
 
 #header {
+  background-color: $page-content-bg;
   .navbar {
     margin-bottom: 0;
   }
+  .header-menu {
+    background-color: $brand-primary;
+    >.container {
+    }
+  }
+}
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: $page-body-bg;
+  padding: 15px 0 0;
+  text-transform: uppercase;
+  font-size: 12px;
 }

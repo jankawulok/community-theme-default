@@ -5,6 +5,9 @@
 
 .content_sortPagiBar {
   margin-bottom: 15px;
+  background: $body-bg;
+  padding: 15px;
+  border: 1px solid $ps-border-color;
   .pagination {
     margin-top: 0;
     margin-bottom: 0;

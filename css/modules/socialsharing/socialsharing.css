@@ -4,7 +4,7 @@
 }
 
 .btn-facebook:hover {
-  color: #fff;
+  color: #ccc;
 }
 
 .btn-twitter {
@@ -33,3 +33,5 @@
 .btn-pinterest:hover, .btn-pinterest:focus {
   color: #fff;
 }
+
+/*# sourceMappingURL=socialsharing.css.map */

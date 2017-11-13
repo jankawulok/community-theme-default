@@ -4,20 +4,23 @@
 // and disabled options for all buttons
 
 @mixin button-variant($color, $background, $border) {
+  transition-property: all;
+  transition-duration: .4s;
+  transition-timing-function: ease;
   color: $color;
   background-color: $background;
   border-color: $border;
 
   &:focus,
   &.focus {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    color: $background;
+    background-color: #fff;
+        border-color: $border;
   }
   &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    color: $background;
+    background-color: #fff;
+        border-color: $border;
   }
   &:active,
   &.active,
