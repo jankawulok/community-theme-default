@@ -5,8 +5,8 @@ p.checkbox input[type="checkbox"] {
 .confirmation {
   background-color: #ffffe0;
   border: 1px solid #e6db55;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5;
 }
 
 .button_mini,
@@ -37,8 +37,8 @@ p.checkbox input[type="checkbox"] {
   white-space: nowrap;
   position: relative;
   padding: 5px 7px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 1rem;
+  line-height: 1.5;
   border-radius: 0;
   color: #333;
   background-color: #f4b61b;
@@ -78,16 +78,13 @@ p.checkbox input[type="checkbox"] {
 .exclusive_disabled,
 .exclusive_large_disabled {
   cursor: not-allowed;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  opacity: .65;
 }
 
 .button.button-small {
   padding: 0 0;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 1rem;
+  line-height: 1.5;
   border-radius: 0;
   padding: 0;
   color: #fff;
@@ -108,8 +105,8 @@ p.checkbox input[type="checkbox"] {
 
 .button.button-medium {
   padding: 0 0;
-  font-size: 18px;
-  line-height: 1.3333333;
+  font-size: 1.25rem;
+  line-height: 1.5;
   border-radius: 0;
   padding: 0;
   color: #fff;
@@ -149,8 +146,8 @@ p.checkbox input[type="checkbox"] {
 .button.exclusive-medium,
 .button.lnk_view {
   padding: 0 0;
-  font-size: 18px;
-  line-height: 1.3333333;
+  font-size: 1.25rem;
+  line-height: 1.5;
   border-radius: 0;
   padding: 0;
   color: #333;
@@ -173,8 +170,8 @@ p.checkbox input[type="checkbox"] {
 
 .button.ajax_add_to_cart_button {
   padding: 0 0;
-  font-size: 18px;
-  line-height: 1.3333333;
+  font-size: 1.25rem;
+  line-height: 1.5;
   border-radius: 0;
   padding: 0;
   color: #fff;

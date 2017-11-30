@@ -95,7 +95,7 @@ $product-comment-border: $ps-border-color;
   padding-left: 0;
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: breakpoint-min(sm)) {
   .comment_author {
     text-align: center;
   }

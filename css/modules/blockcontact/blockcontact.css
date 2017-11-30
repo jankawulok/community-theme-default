@@ -3,7 +3,7 @@
   margin-right: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   #contact_block {
     margin-bottom: 20px;
   }

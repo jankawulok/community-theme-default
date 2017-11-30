@@ -13,7 +13,7 @@
             <div id="scene_products_cluetip_{$scene_key}_{$product_key}_{$product.id_product}" style="display:none;">
               <div class="product-image-container">
                 {if isset($imageIds)}
-                  <img class="img-responsive replace-2x" src="{$link->getImageLink($product.id_product, $imageIds, 'home_default')|escape:'html':'UTF-8'}" alt="" />
+                  <img class="img-fluid replace-2x" src="{$link->getImageLink($product.id_product, $imageIds, 'home_default')|escape:'html':'UTF-8'}" alt="" />
                 {/if}
               </div>
               <p class="product-name"><span class="product_name">{$product.details->name}</span></p>

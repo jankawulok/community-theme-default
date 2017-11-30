@@ -116,13 +116,10 @@
   list-style: none;
 }
 
-#color_to_pick_list:before, #color_to_pick_list:after {
-  content: " ";
-  display: table;
-}
-
-#color_to_pick_list:after {
+#color_to_pick_list::after {
+  display: block;
   clear: both;
+  content: "";
 }
 
 #color_to_pick_list li {
@@ -157,7 +154,7 @@
 
 .btn-add-to-cart.disabled .icon {
   -webkit-animation: icon-spin 2s infinite linear;
-  -o-animation: icon-spin 2s infinite linear;
+  -moz-animation: icon-spin 2s infinite linear;
   animation: icon-spin 2s infinite linear;
 }
 
@@ -205,7 +202,7 @@
 }
 
 .content_only .pb-center-column h1 {
-  margin-top: 20px;
+  margin-top: 1.5;
 }
 
 /*# sourceMappingURL=product.css.map */

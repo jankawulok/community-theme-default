@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   z-index: 98;
-  @include opacity(.20);
+  opacity: .20;
 }
 
 #layer_cart {
@@ -45,18 +45,7 @@
   padding: 30px 30px 170px 30px;
   position: relative;
 
-  @media (min-width: $screen-lg) { // min 1200px
-    min-height: 318px;
-  }
 
-  @media (min-width: $screen-md) and (max-width: $screen-md-max) { // min 992px max 1199px
-    min-height: 360px;
-  }
-
-  @media (max-width: $screen-sm-max) { // max 991px
-    border-left: none;
-    border-top: 1px solid #ccc;
-  }
 
   .title {
     margin-top: 0;
@@ -79,7 +68,7 @@
 
   .pager {
     margin: 0;
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: breakpoint-max(xs)) {
       > li > a {
         float: none;
         display: block;

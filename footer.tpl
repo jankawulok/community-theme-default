@@ -23,6 +23,13 @@
   </footer>
 
 {/if}
+
 {include file="$tpl_dir./global.tpl"}
+{literal}
+<script>
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+</script>
+{/literal}
 </body>
 </html>

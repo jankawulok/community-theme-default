@@ -12,7 +12,7 @@
                             <article>
                                 <a href="{$product.link|escape:'html'}" title="{$product.legend|escape:'html':'UTF-8'}"
                                    class="products-block-image content_img clearfix">
-                                    <img class="replace-2x img-responsive"
+                                    <img class="replace-2x img-fluid"
                                          src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'small_default')|escape:'html'}"
                                          alt="{$product.legend|escape:'html':'UTF-8'}"/>
                                 </a>

@@ -19,3 +19,5 @@
     </a>
   </li>
 {/if}
+
+</div> {* end .nav-header__nav *}

@@ -1,6 +1,5 @@
 {if isset($orderby) AND isset($orderway)}
 
-  {include file='./product-list-switcher.tpl'}
 
   {* On 1.5 the var request is setted on the front controller. The next lines assure the retrocompatibility with some modules *}
   {if !isset($request)}

@@ -10,7 +10,7 @@
 }
 
 #contact_block {
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     margin-bottom: 20px;
   }
   .label {

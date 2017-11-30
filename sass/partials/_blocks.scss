@@ -64,7 +64,7 @@ $block-line-border: $brand-primary;
         margin-right: 15px;
 
         // min 768px max 991px
-        @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+        @media (min-width: breakpoint-min(sm)) and (max-width: breakpoint-max(sm)) {
           float: none;
           display: block;
           margin: 0 auto 10px;

@@ -4,13 +4,13 @@ $bc-header-color: #fad629;
 #blockcart {
   position: relative;
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: breakpoint-max(xs)) {
   }
 
-  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  @media (min-width: breakpoint-min(sm)) and (max-width: breakpoint-max(sm)) {
   }
 
-  @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+  @media (min-width: breakpoint-min(md)) and (max-width: breakpoint-max(md)) {
   }
 }
 
@@ -22,10 +22,10 @@ $bc-header-color: #fad629;
 
   // Make this block the same dimensions as input-lg (search block to the left)
   // @see /sass/vendor/bootstrap/bootstrap/_forms.scss
-  height: $input-height-large;
-  padding: 0 $padding-large-horizontal;
-  // font-size: $font-size-large;
-  line-height: $input-height-large;
+  height: $input-height-lg;
+  padding: 0 1rem;
+  // font-size: $font-size-lg;
+  line-height: $input-height-lg;
 
   // background: $bc-header-bg;
   // color: $bc-header-color;

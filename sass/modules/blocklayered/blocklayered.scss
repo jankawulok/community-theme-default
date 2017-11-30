@@ -48,7 +48,7 @@
       border-color: red;
     }
     &.disable {
-      @include opacity(0.5);
+      opacity: 0.5;
     }
   }
 }

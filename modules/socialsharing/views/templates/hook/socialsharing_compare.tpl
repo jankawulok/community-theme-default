@@ -3,22 +3,22 @@
     <p>{l s="Share this comparison with your friends:" mod='socialsharing'}</p>
     <p class="socialsharing_product">
       {if $PS_SC_TWITTER}
-        <button data-type="twitter" type="button" class="btn btn-xs btn-twitter">
+        <button data-type="twitter" type="button" class="btn btn-sm btn-twitter">
           <i class="icon-twitter"></i> {l s="Tweet" mod='socialsharing'}
         </button>
       {/if}
       {if $PS_SC_FACEBOOK}
-        <button data-type="facebook" type="button" class="btn btn-xs btn-facebook">
+        <button data-type="facebook" type="button" class="btn btn-sm btn-facebook">
           <i class="icon-facebook"></i> {l s="Share" mod='socialsharing'}
         </button>
       {/if}
       {if $PS_SC_GOOGLE}
-        <button data-type="google-plus" type="button" class="btn btn-xs btn-google-plus">
+        <button data-type="google-plus" type="button" class="btn btn-sm btn-google-plus">
           <i class="icon-google-plus"></i> {l s="Google+" mod='socialsharing'}
         </button>
       {/if}
       {if $PS_SC_PINTEREST}
-        <button data-type="pinterest" type="button" class="btn btn-xs btn-pinterest">
+        <button data-type="pinterest" type="button" class="btn btn-sm btn-pinterest">
           <i class="icon-pinterest"></i> {l s="Pinterest" mod='socialsharing'}
         </button>
       {/if}

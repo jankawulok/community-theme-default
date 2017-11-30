@@ -26,7 +26,7 @@
   padding-left: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   #stores-table td.name img {
     display: none;
   }

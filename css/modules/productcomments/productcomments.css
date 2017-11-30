@@ -4,13 +4,10 @@
   font-size: 1.2em;
 }
 
-.star_content:before, .star_content:after {
-  content: " ";
-  display: table;
-}
-
-.star_content:after {
+.star_content::after {
+  display: block;
   clear: both;
+  content: "";
 }
 
 .star_content .cancel,
@@ -72,7 +69,7 @@
   padding-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .comment_author {
     text-align: center;
   }

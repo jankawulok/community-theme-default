@@ -7,15 +7,20 @@
 
   {$show_functional_buttons = $page_name != 'index'}
 
-  <ul{if !empty($id)} id="{$id}"{/if} class="product_list grid list-grid row{if !empty($class)} {$class}{/if}">
+  <section{if !empty($id)} id="{$id}"{/if} class="products{if !empty($class)} {$class}{/if}">
+    <div class="products-container">
+      {foreach from=$products item=product}
+        {include file='./product-list-item.tpl' product=$product}
+      {/foreach}
+    </div>
+    <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+    
+    
 
-    {* IMPORTANT! There must be no spaces betweem </li><li> tags! *}
-    {foreach from=$products item=product}<li class="ajax_block_product {$product_block_size_class}">
-      {include file='./product-list-item.tpl' product=$product}
-    </li>{/foreach}
-    {* IMPORTANT! There must be no spaces betweem </li><li> tags! *}
+    <!-- more products -->
 
-  </ul>
+  </section>
+
 
   {addJsDefL name=min_item}{l s='Please select at least one product' js=1}{/addJsDefL}
   {addJsDefL name=max_item}{l s='You cannot add more than %d product(s) to the product comparison' sprintf=$comparator_max_item js=1}{/addJsDefL}

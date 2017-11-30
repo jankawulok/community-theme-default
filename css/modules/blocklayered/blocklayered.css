@@ -46,7 +46,6 @@
 
 #layered_form .color-option.disable {
   opacity: 0.5;
-  filter: alpha(opacity=50);
 }
 
 ul.layered_filter_ul {

@@ -18,7 +18,7 @@
 {/if}
 
 <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
     <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home Page'}" itemprop="item">
       <span itemprop="name">{l s='Home'}</span>
     </a>
@@ -26,7 +26,7 @@
   </li>
   {if !empty($breadcrumbs)}
     {foreach from=$breadcrumbs item=breadcrumb name=crumbs}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item{if empty($breadcrumb.url)} active{/if}">
         {if !empty($breadcrumb.url)}
           <a href="{$breadcrumb.url}" itemprop="item">
             <span itemprop="name">{$breadcrumb.title}</span>

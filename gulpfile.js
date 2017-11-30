@@ -63,7 +63,7 @@ gulp.task('compile-css', function() {
 			sass({
 				includePaths: bourbon.includePaths,
 				outputStyle: 'expanded',
-				precision: 8
+				precision: 8,
 			}).on('error', sass.logError)
 		)
 		.pipe(gulpif(options.sourcemaps, sourcemaps.write('./')))

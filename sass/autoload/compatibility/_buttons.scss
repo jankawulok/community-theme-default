@@ -101,8 +101,8 @@ $btn-legacy-buy-border    : #006fa8;
 .exclusive_small_disabled,
 .exclusive_disabled,
 .exclusive_large_disabled {
-  cursor: $cursor-disabled;
-  @include opacity(.65);
+  cursor: not-allowed;
+  opacity: .65;
   @include box-shadow(none);
 }
 
@@ -115,7 +115,7 @@ $btn-legacy-buy-border    : #006fa8;
 }
 
 .button.button-medium {
-  @include button-size(0, 0, $font-size-large, $line-height-large, $border-radius-large);
+  @include button-size(0, 0, $font-size-lg, $line-height-lg, $border-radius-large);
   @include legacy-button(10px, 10px, $btn-legacy-green-color, $btn-legacy-green-bg, $btn-legacy-green-border);
   &.exclusive {
     @include legacy-button(10px, 10px, $btn-legacy-orange-color, $btn-legacy-orange-bg, $btn-legacy-orange-border);
@@ -124,11 +124,11 @@ $btn-legacy-buy-border    : #006fa8;
 
 .button.exclusive-medium,
 .button.lnk_view {
-  @include button-size(0, 0, $font-size-large, $line-height-large, $border-radius-large);
+  @include button-size(0, 0, $font-size-lg, $line-height-lg, $border-radius-large);
   @include legacy-button(10px, 10px, $btn-legacy-default-color, $btn-legacy-default-bg, $btn-legacy-default-border);
 }
 
 .button.ajax_add_to_cart_button {
-  @include button-size(0, 0, $font-size-large, $line-height-large, $border-radius-large);
+  @include button-size(0, 0, $font-size-lg, $line-height-lg, $border-radius-large);
   @include legacy-button(10px, 10px, $btn-legacy-buy-color, $btn-legacy-buy-bg, $btn-legacy-buy-border);
 }

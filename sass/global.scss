@@ -9,7 +9,6 @@
 // Vendor styles
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
-
 // Vendor style overrides + new components
 @import "partials/alerts";
 @import "partials/labels";
@@ -24,6 +23,7 @@
 @import "partials/footer";
 
 // Page components and utilities
+@import "partials/header";
 @import "partials/products";
 @import "partials/boxes";
 @import "partials/blocks";
@@ -38,3 +38,5 @@
 @import "partials/pages/address_identity";
 @import "partials/pages/checkout";
 @import "partials/pages/index";
+
+

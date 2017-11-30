@@ -14,7 +14,7 @@
                             <a class="products-block-image" href="{$special.link|escape:'html':'UTF-8'}"
                                title="{$special.name|escape:'html':'UTF-8'}">
                                 <img
-                                        class="replace-2x img-responsive"
+                                        class="replace-2x img-fluid"
                                         src="{$link->getImageLink($special.link_rewrite, $special.id_image, 'small_default')|escape:'html':'UTF-8'}"
                                         alt="{$special.legend|escape:'html':'UTF-8'}"
                                         title="{$special.name|escape:'html':'UTF-8'}"/>

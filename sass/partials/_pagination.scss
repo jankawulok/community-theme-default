@@ -19,7 +19,7 @@
   line-height: 0;
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: breakpoint-min(sm)) {
   .top-pagination-content,
   .bottom-pagination-content {
     .form-group {

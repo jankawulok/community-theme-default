@@ -7,9 +7,9 @@
 }
 
 #blockcart-header {
-  height: 46px;
-  padding: 0 16px;
-  line-height: 46px;
+  height: calc(2.875rem + 2px);
+  padding: 0 1rem;
+  line-height: calc(2.875rem + 2px);
   display: block;
   overflow: hidden;
   font-weight: bold;
@@ -32,7 +32,7 @@
   width: 340px;
   top: 100%;
   right: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #ced4da;
   border-top: none;
   padding: 20px 20px 0;
 }
@@ -127,8 +127,7 @@
   top: 0;
   width: 100%;
   z-index: 98;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: .20;
 }
 
 #layer_cart {
@@ -171,25 +170,6 @@
   position: relative;
 }
 
-@media (min-width: 1200px) {
-  .layer_cart_cart {
-    min-height: 318px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .layer_cart_cart {
-    min-height: 360px;
-  }
-}
-
-@media (max-width: 991px) {
-  .layer_cart_cart {
-    border-left: none;
-    border-top: 1px solid #ccc;
-  }
-}
-
 .layer_cart_cart .title {
   margin-top: 0;
   padding-bottom: 0.35em;
@@ -214,7 +194,7 @@
   margin: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .layer_cart_cart .pager > li > a {
     float: none;
     display: block;

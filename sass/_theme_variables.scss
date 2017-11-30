@@ -25,7 +25,7 @@ $border-radius-large : 0;
 $border-radius-small : 0;
 // @TODO Override top navbar collapse point
 
-$font-size-base: 14px; // Default is 14px
+$font-size-base: 1rem; // Default is 14px
 $font-size-h1: floor(($font-size-base * 2.1)); // ~29px (default: 36px)
 $font-size-h2: floor(($font-size-base * 1.8)); // ~25px (default: 30px)
 $font-size-h3: ceil(($font-size-base * 1.6));  // ~23px (default: 24px)
@@ -128,14 +128,25 @@ $btn-border-radius-small:        $border-radius-small !default;
 
 
 // @see themes/community-theme-default/sass/vendor/bootstrap/bootstrap/_variables.scss
-// $state-success-bg: #dff0d8;
-// $state-info-bg:    #d9edf7;
-// $state-warning-bg: #fcf8e3;
-// $state-danger-bg:  #f2dede;
+$state-success-bg: #dff0d8;
+$state-info-bg:    #d9edf7;
+$state-warning-bg: #fcf8e3;
+$state-danger-bg:  #f2dede;
+$state-danger-text: #fff;
+
+$has-error-bg  : $state-danger-bg;
+$has-warning-bg: $state-warning-bg;
+$has-success-bg: $state-success-bg;
+$alert-warning-bg: #fcf8e3;
+$alert-warning-border: none;
+$alert-warning-text: #fff;
+//BOotstrap 4 fixes
+// $nav-link-hover-bg: $dropdown-link-hover-bg;
+
 
 // @see themes/community-theme-default/sass/vendor/bootstrap/bootstrap/mixins/_forms.scss
 // Change the glow color of .form-control when in focus
-$input-border-focus: $brand-primary;
+$input-border-color-focus: $brand-primary;
 
 // Font Awesome
 $font-icon     : 'FontAwesome';

@@ -21,7 +21,7 @@
   width: 100%;
   border-bottom: 3px solid #e9e9e9;
   background: #f6f6f6;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     display: none;
   }
 }
@@ -29,7 +29,7 @@
   position: absolute;
   top: -999em;
   background: #fff;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     position: relative;
   }
 }
@@ -43,7 +43,7 @@
   float: left;
   border-right: 1px solid $ps-border-color;
   margin-bottom: -3px;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     float: none;
     position: relative;
     border-right: none;
@@ -106,7 +106,7 @@
   z-index: 99;
   padding: 12px 0px 18px 0px;
   @include box-shadow(rgba(black, 0.20) 0px 5px 13px);
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     top: 0;
   }
 }
@@ -160,10 +160,10 @@ ul.sf-menu li li li.sfHover ul {
   float: left;
   width: 20%;
   padding-right: 15px;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     width: 50%;
   }
-  @media (max-width: $screen-xs - 1) { // max 479px
+  @media (max-width: breakpoint-max(xs) - 1) { // max 479px
     width: 100%;
     padding-bottom: 20px;
   }
@@ -178,7 +178,7 @@ ul.sf-menu li li li.sfHover ul {
     float: left;
     padding-left: 10px;
     width: 33.333%;
-    @media (max-width: $screen-xs - 1) { // max 479px
+    @media (max-width: breakpoint-max(xs) - 1) { // max 479px
       width: 100%;
       padding-left: 0;
       padding-top: 10px;
@@ -195,7 +195,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 .cat-title {
   display: none;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     display: block;
     font-weight: 600;
     font-size: 18px;
@@ -239,7 +239,7 @@ ul.sf-menu li li li.sfHover ul {
       margin: 13px 10px 0 0;
       font-size: 13px;
       color: $input-color;
-      border: 1px solid $input-border;
+      border: 1px solid $input-border-color;
     }
   }
 }

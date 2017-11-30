@@ -15,10 +15,20 @@ body {
   position: relative;
 }
 
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 #columns {
   position: relative;
   padding-bottom: 50px;
   padding-top: 15px;
+  max-width: 1400px;
+}
+#left_column {
+  max-width: 250px;
 }
 #product #columns {
   background-color: $page-content-bg;
@@ -36,19 +46,14 @@ body {
 
 #header {
   background-color: $page-content-bg;
-  .navbar {
-    margin-bottom: 0;
-  }
-  .header-menu {
-    background-color: $brand-primary;
-    >.container {
-    }
-  }
 }
 .breadcrumb {
   margin-bottom: 0;
-  background-color: $page-body-bg;
-  padding: 15px 0 0;
-  text-transform: uppercase;
-  font-size: 12px;
 }
+// .breadcrumb {
+//   margin-bottom: 0;
+//   background-color: $page-body-bg;
+//   padding: 15px 0 0;
+//   text-transform: uppercase;
+//   font-size: 12px;
+// }

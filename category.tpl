@@ -11,7 +11,7 @@
         <section id="category-info">
             {if $category->id_image}
                 <div id="category-banner">
-                    <img class="img-responsive"
+                    <img class="img-fluid"
                          src="{$link->getCatImageLink($category->link_rewrite, $category->id_image, 'category_default')|escape:'html':'UTF-8'}"
                          alt="{$category->name|escape:'html':'UTF-8'}" title="{$category->name|escape:'html':'UTF-8'}">
                 </div>

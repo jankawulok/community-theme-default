@@ -14,11 +14,11 @@
     display: none;
   }
   .td-product-description {
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: breakpoint-max(xs)) {
       white-space: normal;
     }
   }
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: breakpoint-min(sm)) {
     table-layout: fixed;
   }
 }

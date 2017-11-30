@@ -7,7 +7,7 @@
   max-width: 192px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   #wishlist_block .lnk .form-group select {
     width: 192px;
   }

@@ -5,7 +5,7 @@
 #send_friend_form {
   width: 560px;
   overflow: hidden;
-  @media (max-width: $screen-xs-max) { // max 767px
+  @media (max-width: breakpoint-max(xs)) { // max 767px
     width: 280px;
   }
 }

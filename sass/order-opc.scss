@@ -28,11 +28,11 @@
 
 // Copy .alert.alert-warning style
 p.warning {
-  padding: $alert-padding;
-  margin-bottom: $line-height-computed;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $line-height-base;
   border: 1px solid transparent;
   border-radius: $alert-border-radius;
-  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+  // @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
 }
 
 #opc_account,

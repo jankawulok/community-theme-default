@@ -43,8 +43,6 @@
 // </li><li>
 //
 ul.list-grid {
-  display: block;
-  list-style: none;
   padding: 0;
 
   // Remove whitespace between inline elements (out columns)
@@ -56,9 +54,6 @@ ul.list-grid {
     // Restore base font size
     font-size: $font-size-base;
 
-    display: inline-block;
-    vertical-align: top;
-    float: none;
   }
 }
 

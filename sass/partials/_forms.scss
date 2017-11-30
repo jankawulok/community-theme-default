@@ -15,23 +15,23 @@ label {
   }
 }
 
-.form-error {
-  @extend .has-error;
-  .form-control {
-    background-color: $has-error-bg;
-  }
-}
+// .form-error {
+//   @extend .has-error;
+//   .form-control {
+//     background-color: $has-error-bg;
+//   }
+// }
 
-.form-ok {
-  @extend .has-success;
-  .form-control {
-    background-color: $has-success-bg;
-  }
-}
+// .form-ok {
+//   @extend .has-success;
+//   .form-control {
+//     background-color: $has-success-bg;
+//   }
+// }
 
-.form-warning {
-  @extend .has-warning;
-  .form-control {
-    background-color: $has-warning-bg;
-  }
-}
+// .form-warning {
+//   @extend .has-warning;
+//   .form-control {
+//     background-color: $has-warning-bg;
+//   }
+// }

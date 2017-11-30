@@ -9,7 +9,7 @@
             <p class="store_image">
                 <a href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}"
                    title="{l s='Our stores' mod='blockstore'}">
-                    <img class="img-responsive"
+                    <img class="img-fluid"
                          src="{$link->getMediaLink("`$module_dir``$store_img|escape:'htmlall':'UTF-8'`")}"
                          alt="{l s='Our stores' mod='blockstore'}" title="{l s='Our stores' mod='blockstore'}"/>
                 </a>

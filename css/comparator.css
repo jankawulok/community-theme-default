@@ -10,13 +10,13 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   #product_comparison .td-product-description {
     white-space: normal;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #product_comparison {
     table-layout: fixed;
   }

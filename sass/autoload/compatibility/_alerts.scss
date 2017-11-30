@@ -2,6 +2,6 @@
 .confirmation {
   background-color: #ffffe0;
   border: 1px solid #e6db55;
-  padding: $alert-padding;
-  margin-bottom: $line-height-computed;
+  padding: $alert-padding-y $alert-padding-x;
+  margin-bottom: $line-height-base;
 }

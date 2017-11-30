@@ -17,21 +17,10 @@
 }
 
 p.warning {
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5;
   border: 1px solid transparent;
-  border-radius: 0;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-  color: #8a6d3b;
-}
-
-p.warning hr {
-  border-top-color: #f7e1b5;
-}
-
-p.warning .alert-link {
-  color: #66512c;
+  border-radius: 0.25rem;
 }
 
 #opc_account,

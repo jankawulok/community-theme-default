@@ -10,7 +10,7 @@
 
         <div class="product clearfix col-xs-12 col-sm-6">
           <div class="thumbnail">
-            <img class="img-responsive" src="{$link->getImageLink($stf_product->link_rewrite, $stf_product_cover, 'home_default')|escape:'html':'UTF-8'}" height="{$homeSize.height}" width="{$homeSize.width}" alt="{$stf_product->name|escape:'html':'UTF-8'}" />
+            <img class="img-fluid" src="{$link->getImageLink($stf_product->link_rewrite, $stf_product_cover, 'home_default')|escape:'html':'UTF-8'}" height="{$homeSize.height}" width="{$homeSize.width}" alt="{$stf_product->name|escape:'html':'UTF-8'}" />
           </div>
           <h5><b>{$stf_product->name}</b></h5>
           <p>{$stf_product->description_short}</p>
