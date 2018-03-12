@@ -7,7 +7,7 @@
 
   {$show_functional_buttons = $page_name != 'index'}
 
-  <section{if !empty($id)} id="{$id}"{/if} class="products{if !empty($class)} {$class}{/if}">
+  <section{if !empty($id)} id="{$id}"{/if} class="products{if !empty($class)} {$class}{/if} product_list">
     <div class="products-container">
       {foreach from=$products item=product}
         {include file='./product-list-item.tpl' product=$product}

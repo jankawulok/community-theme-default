@@ -10,6 +10,11 @@ $panel-comments-info-border: $ps-border-color;
 
 $product-comment-border: $ps-border-color;
 
+
+#new_comment_form {
+  width: 100%;
+  max-width: 26rem;
+}
 .star_content {
 
   display: inline-block;
@@ -40,7 +45,7 @@ $product-comment-border: $ps-border-color;
 
   .star {
     &:after {
-      content: "\f006"; // fa-star-o
+      content: "\f005"; // fa-star-o
       font-family: $font-icon;
       color: $icon-star-neutral-color;
     }

@@ -19,7 +19,9 @@ $bc-header-color: #fad629;
 }
 
 #blockcart-header {
-
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OSA0ODkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ4OSA0ODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDQwLjEsNDIyLjdsLTI4LTMxNS4zYy0wLjYtNy02LjUtMTIuMy0xMy40LTEyLjNoLTU3LjZDMzQwLjMsNDIuNSwyOTcuMywwLDI0NC41LDBzLTk1LjgsNDIuNS05Ni42LDk1LjFIOTAuMyAgIGMtNywwLTEyLjgsNS4zLTEzLjQsMTIuM2wtMjgsMzE1LjNjMCwwLjQtMC4xLDAuOC0wLjEsMS4yYzAsMzUuOSwzMi45LDY1LjEsNzMuNCw2NS4xaDI0NC42YzQwLjUsMCw3My40LTI5LjIsNzMuNC02NS4xICAgQzQ0MC4yLDQyMy41LDQ0MC4yLDQyMy4xLDQ0MC4xLDQyMi43eiBNMjQ0LjUsMjdjMzcuOSwwLDY4LjgsMzAuNCw2OS42LDY4LjFIMTc0LjlDMTc1LjcsNTcuNCwyMDYuNiwyNywyNDQuNSwyN3ogTTM2Ni44LDQ2MiAgIEgxMjIuMmMtMjUuNCwwLTQ2LTE2LjgtNDYuNC0zNy41bDI2LjgtMzAyLjNoNDUuMnY0MWMwLDcuNSw2LDEzLjUsMTMuNSwxMy41czEzLjUtNiwxMy41LTEzLjV2LTQxaDEzOS4zdjQxICAgYzAsNy41LDYsMTMuNSwxMy41LDEzLjVzMTMuNS02LDEzLjUtMTMuNXYtNDFoNDUuMmwyNi45LDMwMi4zQzQxMi44LDQ0NS4yLDM5Mi4xLDQ2MiwzNjYuOCw0NjJ6IiBmaWxsPSIjNDA0MDQwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+  background-repeat: no-repeat;
+  background-position: center;
   // Make this block the same dimensions as input-lg (search block to the left)
   // @see /sass/vendor/bootstrap/bootstrap/_forms.scss
   height: $input-height-lg;
@@ -33,16 +35,32 @@ $bc-header-color: #fad629;
   overflow: hidden;
   font-weight: bold;
 
-  &:after {
-    content: "\f0d7";
-    font-family: $font-icon;
-    float: right;
-  }
+  // &:after {
+  //   content: "\f0d7";
+  //   font-family: $font-icon;
+  //   float: right;
+  // }
 
-  &:hover {
-    &:after {
-      content: "\f0d8";
-    }
+  // &:hover {
+  //   &:after {
+  //     content: "\f0d8";
+  //   }
+  // }
+
+  .ajax_cart_quantity {
+    position: absolute;
+    text-align: center;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    top: calc(100% - 34px / 2);
+    right: -4px;
+    background-color: $brand-primary;
+    line-height: 1.5;
+    border-radius: 16px;
+    padding: 0px 2px;
+    min-width: 21px;
+
   }
 
 }

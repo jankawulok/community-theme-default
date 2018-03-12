@@ -121,7 +121,7 @@ $(function() {
     }
   }
 
-  initProductImages();
+  // initProductImages();
 
   if (typeof(contentOnly) != 'undefined') {
     if (!contentOnly && !!$.prototype.fancybox) {
@@ -229,12 +229,7 @@ function refreshProductImages(id_product_attribute) {
   }
 }
 
-if (typeof(jqZoomEnabled) != 'undefined' && jqZoomEnabled) {
-  $(document).on('click', '#views_block li a', function(e) {
-    e.preventDefault();
-    displayImage($(this));
-  });
-}
+
 
 // On hovering thumbnails, display new main image
 $(document).on('mouseover', '#views_block li a', function() {
@@ -242,7 +237,7 @@ $(document).on('mouseover', '#views_block li a', function() {
 });
 
 // On clicking
-$(document).on('click', '#view_full_size, #image-block', function() {
+$(document).on('click', '#image-block #view_full_size ', function() {
   $('#views_block').find('.shown').trigger('click');
 });
 

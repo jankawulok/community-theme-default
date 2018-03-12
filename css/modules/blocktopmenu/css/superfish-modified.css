@@ -68,7 +68,7 @@
     z-index: 2;
   }
   .sf-menu > li span:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Solid";
     content: "\f067";
     font-size: 26px;
   }
@@ -109,7 +109,7 @@
 .sf-menu li li li a:before {
   content: "\f105";
   display: inline-block;
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Solid";
   padding-right: 10px;
 }
 
@@ -259,7 +259,7 @@ ul.sf-menu li li li.sfHover ul {
   }
   .cat-title:after {
     display: block;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Solid";
     content: "\f067";
     position: absolute;
     right: 15px;

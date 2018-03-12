@@ -1,6 +1,6 @@
-<div  class="product-card">
+<article  class="product-card">
   <div class="product-image">
-    <img class="replace-2x lozad" data-src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" data-srcset="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default_smallest')|escape:'html':'UTF-8'} 211w, {$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default_smaller')|escape:'html':'UTF-8'} 218w, {$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'} 250w" sizes="(min-width: 1200px) 250px, (min-width: 992px) 218px, (min-width: 768px) 211px, 250px" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" />
+    <img class="replace-2x lozad" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" data-src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'}" data-srcset="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default_smallest')|escape:'html':'UTF-8'} 211w, {$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default_smaller')|escape:'html':'UTF-8'} 218w, {$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default')|escape:'html':'UTF-8'} 250w" sizes="(min-width: 1200px) 250px, (min-width: 992px) 218px, (min-width: 768px) 211px, 250px" alt="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" title="{if !empty($product.legend)}{$product.legend|escape:'html':'UTF-8'}{else}{$product.name|escape:'html':'UTF-8'}{/if}" />
   </div>
   <div class="product-info">
     {capture name='displayProductListReviews'}{hook h='displayProductListReviews' product=$product}{/capture}
@@ -48,4 +48,4 @@
     </h6>
 
   </div>
-</div>
+</article>

@@ -1,0 +1,108 @@
+.menu-categories {
+    &.is_open {
+        opacity: 1;
+        visibility: visible;
+    }
+    display: flex;
+    margin-top: 0;
+    overflow: hidden;
+    width: auto;
+    padding: 32px;
+    padding-bottom: 0;
+    padding-top:0;
+    flex-direction: row;
+    position: absolute;
+    text-align: left;
+    // top: 100%;
+    min-width: 256px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.15s ease;
+    &-description {
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        margin: 16px 16px 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &__title {
+            text-overflow: ellipsis;
+            font-size:1rem;
+            font-weight: 600;
+        }
+
+    }
+    &-list {
+        width: auto;
+        padding-right: 1em;
+        user-select: none;
+        &__item {
+            display: flex;
+            padding: 12px 0;
+            align-items: center;
+            position: relative;
+            &-icon {
+                // background-color: #767676;
+                box-sizing: content-box;
+                height: 24px;
+                margin-right: 16px;
+                max-width: 24px;
+                path {
+                    fill: #767676;
+                }
+            }
+            &-link {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+}
+.menu-categories-left-container {
+    display: flex;
+    &__banner {
+        padding: 15px;
+    }
+    &__item {
+        display: none;
+        &:first-child {
+            display: flex;
+        }
+    }
+    &__subcategories {
+        column-count: 2;
+        flex-grow: 1;
+        &-item {
+            a {
+                line-height: 2.2;
+                display: block;
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu-categories  {
+        &-description {
+            max-width: 100%;
+            width: 100%;
+
+        }
+    }
+    .menu-categories-left-container__banner {
+        display: none;
+    }
+}

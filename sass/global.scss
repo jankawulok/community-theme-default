@@ -5,7 +5,7 @@
 
 // Vendor variable overrides
 @import "theme_variables";
-
+@import "partials/menu";
 // Vendor styles
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
@@ -13,17 +13,18 @@
 @import "partials/alerts";
 @import "partials/labels";
 @import "partials/forms";
-
+@import "partials/mixins";
 // Base styles
 @import "partials/type";
 @import "partials/headings";
 
 // Page style and blocks
 @import "partials/page";
+@import "partials/header";
+@import "partials/categories_menu";
 @import "partials/footer";
 
 // Page components and utilities
-@import "partials/header";
 @import "partials/products";
 @import "partials/boxes";
 @import "partials/blocks";
@@ -31,7 +32,7 @@
 @import "partials/pagination";
 @import "partials/utilities";
 @import "partials/highdpi";
-@import "partials/menu";
+
 
 // Pages
 @import "partials/pages/404";

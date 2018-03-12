@@ -1,0 +1,42 @@
+@mixin caret-down {
+  border-top: $caret-width solid;
+  border-right: $caret-width solid transparent;
+  border-bottom: 0;
+  border-left: $caret-width solid transparent;
+}
+
+@mixin caret-up {
+  border-top: 0;
+  border-right: $caret-width solid transparent;
+  border-bottom: $caret-width solid;
+  border-left: $caret-width solid transparent;
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      -ms-grid-row-align: center;
+      align-self: center;
+      margin-left: 3.429rem;
+      display: inline-block;
+      vertical-align: middle;
+
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' color='%23767676' fill='%23fff'%3E%3Cpath fill='currentColor' d='M38.121 74.121l-4.242-4.242L55.758 48 33.879 26.121l4.242-4.242L64.242 48 38.121 74.121z'/%3E%3C/svg%3E");
+      content: "";
+      display: block;
+      height: 1.714rem;
+      transform: rotate(90deg);
+      width: 1.714rem;
+      transition: all 0.2s ease;
+      @if $direction == down {
+        @include caret-down;
+      } @else if $direction == up {
+        @include caret-up;
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}

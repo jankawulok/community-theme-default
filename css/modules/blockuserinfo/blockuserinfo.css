@@ -10,4 +10,44 @@
   word-break: keep-all;
 }
 
+.blockuserinfo-header .dropdown-menu {
+  min-width: 250px;
+  padding-bottom: 0;
+}
+
+.blockuserinfo-header .dropdown-item {
+  padding: 0.5rem 1.5rem;
+}
+
+.blockuserinfo-header .dropdown-item__big {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blockuserinfo-header .dropdown-item__social-container {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+}
+
+.blockuserinfo-header .dropdown-item__social-element {
+  color: #fff;
+  padding: 0.8em;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.blockuserinfo-header .dropdown-item__social-element i {
+  padding-right: 0.5em;
+}
+
+.blockuserinfo-header .dropdown-item__social-facebook {
+  background: #3b5998;
+}
+
+.blockuserinfo-header .dropdown-item__social-google {
+  background: #dd4b39;
+}
+
 /*# sourceMappingURL=blockuserinfo.css.map */

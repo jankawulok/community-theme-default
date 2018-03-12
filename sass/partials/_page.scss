@@ -4,6 +4,8 @@ $page-content-bg: #fff;
 
 body {
   background-color: $page-body-bg;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   &.content_only {
     background-color: $page-content-bg;
   }
@@ -26,13 +28,17 @@ body {
   padding-bottom: 50px;
   padding-top: 15px;
   max-width: 1400px;
+  background-color: #fff;
 }
+
 #left_column {
   max-width: 250px;
+  display: flex;
+  flex-direction: column;
 }
+
 #product #columns {
   background-color: $page-content-bg;
-  border: 1px solid $ps-border-color;
 }
 #index {
   #columns {

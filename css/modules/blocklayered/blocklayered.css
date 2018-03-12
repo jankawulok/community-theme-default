@@ -16,6 +16,14 @@
   float: right;
 }
 
+#layered_block_left {
+  position: sticky;
+  bottom: 0;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
 #layered_form ul {
   padding: 0;
   margin: 0 0 10px;
@@ -34,10 +42,10 @@
 
 #layered_form .color-option {
   margin-left: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   padding: 0;
-  border: 1px solid #666;
+  border: 2px solid #666;
 }
 
 #layered_form .color-option.on {
@@ -53,10 +61,19 @@ ul.layered_filter_ul {
   overflow-x: auto;
 }
 
+.layered_subtitle_heading {
+  position: sticky;
+  background: #fff;
+  top: 0;
+  display: block;
+  z-index: 10;
+}
+
 .layered_subtitle {
   display: block;
-  margin-bottom: 5px;
   font-weight: bold;
+  padding: 15px 30px 15px 0;
+  font-size: 1rem;
 }
 
 .layered_price_range_unit {

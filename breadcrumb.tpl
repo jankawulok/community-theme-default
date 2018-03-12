@@ -17,8 +17,8 @@
   {/if}
 {/if}
 
-<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+<ol class="breadcrumb">
+  <li itemprop="itemListElement" class="breadcrumb-item">
     <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home Page'}" itemprop="item">
       <span itemprop="name">{l s='Home'}</span>
     </a>
@@ -26,15 +26,14 @@
   </li>
   {if !empty($breadcrumbs)}
     {foreach from=$breadcrumbs item=breadcrumb name=crumbs}
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item{if empty($breadcrumb.url)} active{/if}">
+      <li itemprop="itemListElement" class="breadcrumb-item{if empty($breadcrumb.url)} active{/if}">
         {if !empty($breadcrumb.url)}
-          <a href="{$breadcrumb.url}" itemprop="item">
-            <span itemprop="name">{$breadcrumb.title}</span>
+          <a href="{$breadcrumb.url}" >
+            <span>{$breadcrumb.title}</span>
           </a>
         {else}
-          <span itemprop="name">{$breadcrumb.title}</span>
+          <span>{$breadcrumb.title}</span>
         {/if}
-        <meta itemprop="position" content="{($smarty.foreach.crumbs.iteration|intval + 1)}" />
       </li>
     {/foreach}
   {/if}

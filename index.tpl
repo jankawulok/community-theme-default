@@ -1,3 +1,19 @@
+<div class="box-sheet">
+    
+    <div class="box-slider">
+        
+    </div>
+</div>
+
+<div class="box-sheet">
+    
+    <div class="tiles-carousel">
+        
+    </div>
+</div>
+
+
+
 {if !empty($HOOK_HOME_TAB)}
   <ul id="home-page-tabs" class="nav nav-tabs">
     {$HOOK_HOME_TAB}
