@@ -56,7 +56,7 @@
   height: 60px;
   overflow: hidden;
   cursor: pointer;
-  background-color: #006699;
+  background-color: #1e83a9;
   text-transform: uppercase;
 }
 
@@ -121,7 +121,7 @@
 
 .mega-group-header span {
   display: block;
-  border-left: 3px solid #0088cc;
+  border-left: 3px solid #26A5D4;
   padding: 3px 15px 5px 15px;
 }
 
@@ -273,7 +273,7 @@ ul.group-link-default li {
       */
   }
   .menu ul.megamenus-ul li:hover {
-    border-left: 3px solid #0088cc;
+    border-left: 3px solid #26A5D4;
   }
   .menu ul.megamenus-ul li:hover a.parent {
     border-bottom: 1px solid #ccc;
@@ -528,12 +528,12 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: lighter;
   line-height: 1.5;
-  color: #212529;
+  color: #4F4F4F;
   text-align: left;
-  background-color: #fff;
+  background-color: #F2F2F2;
 }
 
 [tabindex="-1"]:focus {
@@ -838,30 +838,30 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: inherit;
+  color: #4F4F4F;
 }
 
 h1, .h1 {
-  font-size: 2.1875rem;
+  font-size: 48px;
 }
 
 h2, .h2 {
-  font-size: 1.75rem;
+  font-size: 36px;
 }
 
 h3, .h3 {
-  font-size: 1.53125rem;
+  font-size: 24px;
 }
 
 h4, .h4 {
-  font-size: 1.3125rem;
+  font-size: 24px;
 }
 
 h5, .h5 {
-  font-size: 1.09375rem;
+  font-size: 18px;
 }
 
 h6, .h6 {
@@ -907,7 +907,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 mark,
@@ -961,7 +961,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #F2F2F2;
   border: 1px solid #ddd;
   transition: all 0.2s ease-in-out;
   max-width: 100%;
@@ -1843,7 +1843,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #F2F2F2;
 }
 
 .table-sm th,
@@ -2009,7 +2009,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  color: #F2F2F2;
   background-color: #212529;
   border-color: #32383e;
 }
@@ -2021,7 +2021,7 @@ pre code {
 }
 
 .table-dark {
-  color: #fff;
+  color: #F2F2F2;
   background-color: #212529;
 }
 
@@ -3002,7 +3002,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: lighter;
   color: #333;
   background-color: transparent;
 }
@@ -3020,7 +3020,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #f1f1f1;
+  color: #F2F2F2;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3115,7 +3115,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.875rem;
-  color: #212529;
+  color: #4F4F4F;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3157,7 +3157,7 @@ tbody.collapse.show {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: lighter;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -3347,7 +3347,7 @@ tbody.collapse.show {
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.5;
   color: #495057;
   text-align: center;
@@ -3448,7 +3448,7 @@ tbody.collapse.show {
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 1px #F2F2F2, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -3660,8 +3660,8 @@ tbody.collapse.show {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #ddd #ddd #fff;
+  background-color: #F2F2F2;
+  border-color: #ddd #ddd #F2F2F2;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4257,7 +4257,7 @@ tbody.collapse.show {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #F2F2F2;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -4662,7 +4662,7 @@ tbody.collapse.show {
 }
 
 .list-group-item-action:active {
-  color: #212529;
+  color: #4F4F4F;
   background-color: #e9ecef;
 }
 
@@ -5061,7 +5061,7 @@ button.close {
   margin: 0;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -5173,7 +5173,7 @@ button.close {
   max-width: 276px;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -5329,7 +5329,7 @@ button.close {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: inherit;
+  color: #4F4F4F;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
 }
@@ -5340,7 +5340,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529;
+  color: #4F4F4F;
 }
 
 .carousel {
@@ -7994,7 +7994,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .font-weight-normal {
-  font-weight: 400 !important;
+  font-weight: lighter !important;
 }
 
 .font-weight-bold {
@@ -11993,9 +11993,7 @@ a:hover {
 }
 
 body {
-  background-color: #edecec;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  background-color: #f2f2f2;
 }
 
 body.content_only {
@@ -12037,7 +12035,7 @@ body.content_only {
 }
 
 #header-banners {
-  background-color: #2c2125;
+  background-color: #f2f2f2;
 }
 
 #header {
@@ -12058,6 +12056,12 @@ body.content_only {
 }
 
 .headroom--pinned {
+  position: fixed;
+  top: 0;
+  height: 56px;
+}
+
+.headroom--pinned {
   transform: translateY(0%);
 }
 
@@ -12072,8 +12076,10 @@ body.content_only {
   justify-content: space-between;
   margin: 0 auto;
   flex-wrap: wrap;
+  z-index: 10;
   height: 96px;
   max-width: 1400px;
+  background-color: #fff;
 }
 
 .nav-header__logo {
@@ -12084,7 +12090,7 @@ body.content_only {
 
 .nav-header__logo > img {
   width: auto;
-  max-height: 48px;
+  max-height: 75px;
 }
 
 .nav-header__search {
@@ -12203,6 +12209,7 @@ body.cookie-policy-not-dismissed .header-cookie-policy .alert {
 
 .nav-header-menu__links {
   transition: transform .3s ease-in-out;
+  overflow-x: hidden;
 }
 
 .nav-header-menu__link {
@@ -12227,11 +12234,12 @@ body.cookie-policy-not-dismissed .header-cookie-policy .alert {
 }
 
 .menu-categories {
+  max-width: 99%;
   display: flex;
-  margin-top: 0;
+  margin-top: 1px;
   overflow: hidden;
   width: auto;
-  padding: 32px;
+  padding: 1rem;
   padding-bottom: 0;
   padding-top: 0;
   flex-direction: row;
@@ -12424,10 +12432,10 @@ body.cookie-policy-not-dismissed .header-cookie-policy .alert {
 }
 
 .box {
-  border: 1px solid #d6d4d4;
   margin: 0 0 20px;
-  padding: 10px;
-  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  background-color: #f4f4f4;
 }
 
 .product-box {
@@ -12477,7 +12485,7 @@ ul.address {
 
 .block .list-block li {
   padding: 6px 0 6px 6px;
-  border-top: 1px solid #0088cc;
+  border-top: 1px solid #26A5D4;
 }
 
 .block .list-block li:first-child {
@@ -12493,7 +12501,7 @@ ul.address {
 .block .products-block li {
   padding: 0 0 15px 0;
   margin-bottom: 15px;
-  border-bottom: 1px solid #0088cc;
+  border-bottom: 1px solid #26A5D4;
 }
 
 .block .products-block li:last-of-type {
@@ -12554,7 +12562,7 @@ ul.address {
 
 .content_sortPagiBar {
   margin-bottom: 15px;
-  background: #fff;
+  background: #F2F2F2;
   padding: 15px;
   border: 1px solid #d6d4d4;
 }

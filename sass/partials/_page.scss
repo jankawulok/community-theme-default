@@ -1,11 +1,9 @@
-$header-banner-bg: #2c2125;
-$page-body-bg: #edecec;
+$header-banner-bg: #f2f2f2;
+$page-body-bg: #f2f2f2;
 $page-content-bg: #fff;
 
 body {
   background-color: $page-body-bg;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   &.content_only {
     background-color: $page-content-bg;
   }

@@ -1,6 +1,7 @@
 // Typography
 // ROBOTO FONT
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
 
 @import "bootstrap/variables";
 
@@ -8,9 +9,17 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-
+h1 {
+  font-weight: regular;
+}
+h2, h3 {
+  font-weight: bold;
+}
+h1 {
+  font-weight: regular;
+}
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // Responsive headings

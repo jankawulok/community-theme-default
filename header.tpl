@@ -52,34 +52,20 @@
     <![endif]-->
     <script async="async" type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" async></script>
     {* <script src="{$tpl_uri}js/hello.all.js" defer></script> *}
-    <script type="text/javascript" src="https://unpkg.com/headroom.js" async></script>
+    {* <script type="text/javascript" src="https://unpkg.com/headroom.js" async></script> *}
     {* <script src="https://cdn.jsdelivr.net/npm/vue"></script> *}
     {* <script src="https://vuejs.org/js/vue.js" async></script> *}
     {* <script src="https://unpkg.com/vuex@3.0.1/dist/vuex.js" async></script> *}
 {*     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet" lazyload> *}
 <script async="async"  src="{$tpl_uri}js/partials/menu.js" defer></script>
-{if isset($css_files)}
-    {foreach from=$css_files key=css_uri item=media}
-        {if $css_uri == 'lteIE9'}
-            <!--[if lte IE 9]>
-            {foreach from=$css_files[$css_uri] key=css_uriie9 item=mediaie9}
-            <link rel="stylesheet" href="{$css_uriie9|escape:'html':'UTF-8'}" type="text/css"
-                  media="{$mediaie9|escape:'html':'UTF-8'}"/>
-            {/foreach}
-            <![endif]-->
-        {else}
-            <link async="async"  rel="stylesheet" href="{$css_uri|escape:'html':'UTF-8'}" type="text/css"
-                  media="{$media|escape:'html':'UTF-8'}"/>
-        {/if}
-    {/foreach}
-{/if}
+
 {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
     {$js_def}
     {foreach from=$js_files item=js_uri}
-        <script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}" ></script>
+        <script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}" async></script>
     {/foreach}
 {/if}
-
+{* <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet"> *}
 
 </head>
 <body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if}
@@ -133,7 +119,7 @@
         <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}"
             title="{$shop_name|escape:'html':'UTF-8'}">
             <h2 itemscope itemtype="http://schema.org/Organization" class="nav-header__logo">
-                <img class="center-block" src="https://maleomi.pl/themes/theme/img/logo.svg" alt="{$shop_name|escape:'html':'UTF-8'}"
+                <img class="center-block" src="{$img_dir}logo.svg" alt="{$shop_name|escape:'html':'UTF-8'}"
                     title="{$shop_name|escape:'html':'UTF-8'}"/>
             </h2>
         </a>
@@ -190,7 +176,9 @@
         <div id="top_column" class="row">{$smarty.capture.displayTopColumn}</div>
     {/if}
     <div class="d-flex flex-row justify-content-md-center">
-        {if isset($left_column_size) && !empty($left_column_size)}
+        {if isset($category) && isset($category->pageComponents)}
+            
+        {elseif isset($left_column_size) && !empty($left_column_size)}
             <aside id="left_column" class="col">{$HOOK_LEFT_COLUMN}
                 {if !empty($category->description)}
                     <div id="category-description" class="rte">{$category->description}</div>

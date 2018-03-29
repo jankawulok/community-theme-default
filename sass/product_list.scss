@@ -149,6 +149,13 @@ $product-grid-item-hover-bg: #f6f6f6;
       }
     }
   }
+  .product-price {
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  }
   .product-price-button-wrapper {
     position: relative;
     // This needs to have minimum height of the buttons that will be displayed on hover
@@ -271,10 +278,27 @@ $product-grid-item-hover-bg: #f6f6f6;
   padding: 1%;
   transition: all 0.2s ease;
   box-sizing: content-box;
+  h6 {
+    text-align:center;
+  }
+  .product-price {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .product-name {
+    font-style: normal;
+font-weight: 300;
+line-height: 25px;
+font-size: 18px;
+text-align: center;
+  }
 }
 
 .product-info {
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width: 1200px) {

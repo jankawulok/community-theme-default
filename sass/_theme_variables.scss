@@ -20,9 +20,9 @@ $product-price-old-color       : #b1b1b1;
 //
 
 // Bootstrap
-$border-radius-base  : 0;
-$border-radius-large : 0;
-$border-radius-small : 0;
+$border-radius-base  : 4px;
+$border-radius-large : 4px;
+$border-radius-small : 4px;
 $enable-rounded:       false !default;
 // @TODO Override top navbar collapse point
 
@@ -38,10 +38,10 @@ $font-size-h6: $font-size-base;                // ~14px (default: 12px)
 // @TODO Overwrite theses variables to customize the colors of Bootstrap:
 
 // @see themes/community-theme-default/sass/vendor/bootstrap/bootstrap/_variables.scss
-$brand-primary:  #0088cc !default; // #0091D1
+$brand-primary:  #26A5D4 !default; // #0091D1
 $btn-primary-color:  #0088cc !default;
 $brand-info: $brand-primary;
-$brand-success:  #0088cc;
+$brand-success:  $brand-primary;
 $bc-header-color: #fad629;
 $navbar-default-brand-color: #fad629;
 $navbar-inverse-link-color: #fff;
@@ -50,14 +50,15 @@ $navbar-inverse-color: #fff;
 $navbar-inverse-color:                      lighten($gray-light, 15%) !default;
 $navbar-inverse-bg:                         #0091D1 !default;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
-$brand-info:     #5bc0de;
-$brand-warning:  #f0ad4e;
-$brand-danger:   #d9534f;
-$gray-light: #f1f1f1;
-$page-body-bg: #fff;  //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$brand-info:     #828282;
+$brand-warning:  #EB5757;
+$brand-danger:   #EB5757;
+$gray-light: #F2F2F2;
+$page-content-bg: #F2F2F2;
+$page-body-bg: #F2F2F2;  //** Background color for `<body>`.
+$body-bg:               #F2F2F2 !default;
 //** Global text color on `<body>`.
-$text-color:            #212032 !default;
+$text-color:            #4F4F4F !default;
 
 //** Global textual link color.
 $link-color:            #333 !default;
@@ -92,6 +93,8 @@ $font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Robo
 $font-size-base: 0.875rem;
 // $font-weight-base: 
 $line-height-base: 1.5;
+
+$breadcrumb-bg: $gray-light;
 
 //== Buttons
 //

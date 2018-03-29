@@ -1,4 +1,4 @@
-<section id="blocknewsletter" class="col-xs-12 col-sm-3">
+<section id="blocknewsletter" class="col-xs-12 col-sm-12">
   <h2 class="footer-title section-footer-title">{l s='Newsletter' mod='blocknewsletter'}</h2>
   <form action="{$link->getPageLink('index', null, null, null, false, null, true)|escape:'html':'UTF-8'}" method="post">
     <div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >

@@ -68,8 +68,8 @@
               <span>1</span>
             </a>
           </li>
-          <li class="truncate">
-            <span>
+          <li class="page-item">
+            <span class="page-link">
               <span>...</span>
             </span>
           </li>
@@ -91,8 +91,8 @@
           {/if}
         {/section}
         {if $pages_nb>$stop+2}
-          <li class="truncate">
-            <span>
+          <li class="page-item">
+            <span class="page-link">
               <span>...</span>
             </span>
           </li>

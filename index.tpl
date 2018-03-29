@@ -1,17 +1,12 @@
-<div class="box-sheet">
-    
-    <div class="box-slider">
-        
-    </div>
-</div>
+<div id="vuecomponents" v-cloak></div>
 
-<div class="box-sheet">
-    
-    <div class="tiles-carousel">
-        
-    </div>
-</div>
 
+{if isset($pageComponents)}
+  {foreach from=$pageComponents item=component}
+
+    {include file="$tpl_dir./components/{$component->type}.tpl" component=$component}
+  {/foreach}
+{/if}
 
 
 {if !empty($HOOK_HOME_TAB)}

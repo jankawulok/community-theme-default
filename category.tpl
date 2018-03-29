@@ -5,6 +5,11 @@
 {if !empty($category) && $category->id}
     {if !$category->active}
         <div class="alert alert-warning">{l s='This category is currently unavailable.'}</div>
+    {elseif isset($category->pageComponents)}
+        {foreach from=$pageComponents item=component}
+
+            {include file="$tpl_dir./components/{$component->type}.tpl" component=$component}
+        {/foreach}
     {else}
         <main>
             

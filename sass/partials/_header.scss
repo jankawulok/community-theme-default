@@ -5,6 +5,14 @@
     will-change: transform;
     transition: transform 200ms linear;
 }
+
+.headroom--pinned {
+    position: fixed;
+    top: 0;
+    height: 56px;
+}
+.headroom--unpinned {
+}
 .headroom--pinned {
     transform: translateY(0%);
 }
@@ -18,15 +26,17 @@
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
+    z-index:10;
     height: 96px;
     max-width: 1400px;
+    background-color: #fff;
     &__logo {
         order: 1;
         margin-right: 1rem;
         margin-bottom: 0;
         &>img {
             width: auto;
-            max-height: 48px;
+            max-height: 75px;
         }
     }
     &__search {
@@ -150,6 +160,7 @@ body.cookie-policy-not-dismissed {
     }
     &__links {
         transition: transform .3s ease-in-out;
+        overflow-x: hidden;
     }
     &__link {
         padding: 0 12px;

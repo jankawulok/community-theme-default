@@ -137,6 +137,14 @@
   opacity: 0;
 }
 
+.product_list.grid .product-price {
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
 .product_list.grid .product-price-button-wrapper {
   position: relative;
   margin-bottom: 10px;
@@ -275,8 +283,28 @@
   box-sizing: content-box;
 }
 
+.product-card h6 {
+  text-align: center;
+}
+
+.product-card .product-price {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.product-card .product-name {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+}
+
 .product-info {
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width: 1200px) {

@@ -56,7 +56,7 @@
 #homeslider-pager {
   border: 1px solid #e9ecef;
   border-top: none;
-  background: inherit;
+  background: #4F4F4F;
   padding: 7px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 #homeslider-pager .bx-pager-item .bx-pager-link.active {
-  background: #0088cc;
+  background: #26A5D4;
   color: #fff;
 }
 
