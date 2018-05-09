@@ -61,7 +61,7 @@ gulp.task('compile-css', function() {
 		.pipe(gulpif(options.sourcemaps, sourcemaps.init()))
 		.pipe(
 			sass({
-				includePaths: bourbon.includePaths,
+				includePaths:[ bourbon.includePaths, 'node_modules'],
 				outputStyle: 'expanded',
 				precision: 8,
 			}).on('error', sass.logError)

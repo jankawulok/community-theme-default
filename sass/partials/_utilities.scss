@@ -11,7 +11,7 @@
   pointer-events: none;
   cursor: not-allowed;
   -webkit-touch-callout: none;
-  @include user-select(none);
+  user-select: none;
   &:after {
     position: absolute;
     content: '';

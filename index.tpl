@@ -1,28 +1,13 @@
-<div id="vuecomponents" v-cloak></div>
+{extends file='page.tpl'}
 
-
-{if isset($pageComponents)}
-  {foreach from=$pageComponents item=component}
-
-    {include file="$tpl_dir./components/{$component->type}.tpl" component=$component}
-  {/foreach}
-{/if}
-
-
-{if !empty($HOOK_HOME_TAB)}
-  <ul id="home-page-tabs" class="nav nav-tabs">
-    {$HOOK_HOME_TAB}
-  </ul>
-{/if}
-
-{if !empty($HOOK_HOME_TAB_CONTENT)}
-  <div class="tab-content">
-    {$HOOK_HOME_TAB_CONTENT}
-  </div>
-{/if}
-
-{if !empty($HOOK_HOME)}
-  <div class="row">
-    {$HOOK_HOME}
-  </div>
-{/if}
+{block name='page_content'}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  {block name='hook_home'}
+    {$HOOK_HOME nofilter}
+  {/block}
+{/block}

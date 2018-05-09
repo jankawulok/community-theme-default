@@ -1,48 +1,40 @@
 {
-  "name": "community-theme-default",
-  "private": true,
-  "devDependencies": {
-    "del": "^2.2.0",
-    "fs-extra": "^0.30.0",
-    "glob-all": "^3.0.1",
-    "grunt-critical": "^0.3.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^7.0.1",
-    "gulp-if": "^2.0.1",
-    "gulp-jscs": "^3.0.2",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-zip": "^3.0.2",
-    "mkdirp": "^0.5.1",
-    "node-bourbon": "^4.2.8",
-    "run-sequence": "^1.1.5"
-  },
-  "options": {
-    "themeName": "theme",
-    "themeModulePrefix": "ct",
-    "sourcemaps": true
-  },
-  "scripts": {
-    "compile-css": "./node_modules/.bin/gulp compile-css",
-    "watch-sass": "./node_modules/.bin/gulp watch-sass",
-    "clean-up": "./node_modules/.bin/gulp clean-up",
-    "copy-index": "./node_modules/.bin/gulp copy-index",
-    "format-js": "./node_modules/.bin/gulp format-js",
-    "scan-translations": "./node_modules/.bin/gulp scan-translations"
+  "name": "theme",
+  "version": "1.0.0",
+  "description": "theme",
+  "main": "advanced-payment-api.js",
+  "directories": {
+    "doc": "docs"
   },
   "dependencies": {
-    "del": "^2.2.2",
-    "fs-extra": "^0.30.0",
-    "glob-all": "^3.1.0",
-    "gulp-if": "^2.0.2",
-    "gulp-jscs": "^3.0.2",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.12.0",
-    "gulp-zip": "^3.2.0",
-    "node-bourbon": "^4.2.8",
+    "gulp-babel": "^7.0.1",
+    "turbolinks": "^5.1.1",
     "vue-authenticate": "^1.3.4"
-  }
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.4",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jankawulok/theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jankawulok/theme/issues"
+  },
+  "homepage": "https://github.com/jankawulok/theme#readme"
 }
